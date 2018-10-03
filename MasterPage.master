@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 343px;
+            width: 1263px;
+        }
+        .auto-style2 {
+            width: 1263px;
+        }
+        .auto-style3 {
+            text-align: center;
+            vertical-align: top;
+            width: 1263px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="table">
+        <tr>
+            <td colspan="2" class="auto-style1">
+
+
+                <asp:Image ID="Image1" runat="server" Height="325px" ImageUrl="~/img/a.jpg" style="margin-right: 0px" Width="693px" />
+
+
+             </td>
+
+
+        </tr>
+
+
+            <td class="auto-style2">  
+<div id="cssmenu">
+<ul>
+
+
+   <li class='active'><a href ="Default.aspx">Anasayfa</a></li>
+
+   <li><a href ="hakkimizda.aspx">Hakkımızda</a></li>
+   <li><a href="iletisim.aspx">Şikayet</a></li>
+   <li><a href="rez.aspx">Rezervasyon</a></li>
+</ul>
+</div> 	
+                
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+            </td>
+
+        </tr>
+         <tr>
+            <td colspan="2" class="auto-style3">
+            <h1>All Right Reserved &copy</h1>
+
+            </td>
+
+           
+        </tr>
+
+
+    </table>
+
+
+
+    
+    </form>
+</body>
+</html>
